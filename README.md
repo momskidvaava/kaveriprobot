@@ -1,15 +1,13 @@
-![Saitama](https://wallpaperscave.com/images/original/18/04-25/anime-one-punch-man-44886.jpg)
-# Saitama Robot 
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/6141417ceaf84545bab6bd671503df51)](https://app.codacy.com/gh/AnimeKaizoku/SaitamaRobot?utm_source=github.com&utm_medium=referral&utm_content=AnimeKaizoku/SaitamaRobot&utm_campaign=Badge_Grade_Settings)  [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/AnimeKaizoku/SaitamaRobot/graphs/commit-activity) [![GPLv3 license](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://perso.crans.org/besson/LICENSE.html) [![Open Source Love svg2](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://makeapullrequest.com) [![Updates channel!](https://img.shields.io/badge/Join%20Channel-!-red)](https://t.me/OnePunchUpdates)
-
+![കാവേരി](https://telegra.ph/file/8dbe11622b1d258101636.jpg)
+(https://app.codacy.com/gh/AnimeKaizoku/SaitamaRobot?utm_source=github.com&utm_medium=referral&utm_content=AnimeKaizoku/SaitamaRobot&utm_campaign=Badge_Grade_Settings)  [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity) [![GPLv3 license](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://perso.crans.org/besson/LICENSE.html) [![Open Source Love svg2](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://makeapullrequest.com) [![Updates channel!](https://img.shields.io/badge/Join%20Channel-!-red)](https://t.me/kaveriprobot_updates)
 
 A modular Telegram Python bot running on python3 with a sqlalchemy database and an entirely themed persona to make Saitama suitable for Anime and Manga group chats. 
 
-Can be found on telegram as [SaitamaRobot](https://t.me/SaitamaRobot).
+Can be found on telegram as 💝💢കാവേരി 💢❤️ [@kaveriprobot](https://t.me/kaveriprobot).
 
-The Support group can be reached out to at [One Punch Support](https://t.me/OnePunchSupport), where you can ask for help about [SaitamaRobot](https://t.me/SaitamaRobot), discover/request new features, report bugs, and stay in the loop whenever a new update is available. 
+The Support group can be reached out to at [One Punch Support](https://t.me/kaveriprobot_updates), where you can ask for help about [SaitamaRobot](https://t.me/SaitamaRobot), discover/request new features, report bugs, and stay in the loop whenever a new update is available. 
 
-News channel as at [One Punch Updates](https://t.me/OnePunchUpdates) 
+News channel as at [@kaveriprobot_updates](https://t.me/OnePunchUpdates) 
 
 ## How to setup/deploy.
 
@@ -29,7 +27,7 @@ REMEMBER: Turn on worker dyno (Don't worry It's free :D) & Webhook
 Now send the bot /start, If it doesn't respond go to https://dashboard.heroku.com/apps/(app-name)/settings and remove webhook and port.
 ```
 
-  [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/AnimeKaizoku/SaitamaRobot.git)
+  [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/momskidvaava/kaveriprobot.git)
 
 </details>  
 <details>
@@ -44,7 +42,7 @@ This is because markdown parsing is done by iterating through a dict, which is o
 There are two possible ways of configuring your bot: a config.py file, or ENV variables.
 
 The preferred version is to use a `config.py` file, as it makes it easier to see all your settings grouped together.
-This file should be placed in your `SaitamaRobot` folder, alongside the `__main__.py` file. 
+This file should be placed in your `kaveriprobot` folder, alongside the `__main__.py` file. 
 This is where your bot token will be loaded from, as well as your database URI (if you're using a database), and most of 
 your other settings.
 
@@ -56,13 +54,13 @@ An example `config.py` file could be:
 from SaitamaRobot.sample_config import Config
 
 class Development(Config):
-    OWNER_ID = 254318997  # your telegram ID
-    OWNER_USERNAME = "SonOfLars"  # your telegram username
+    OWNER_ID = 998920177  # your telegram ID
+    OWNER_USERNAME = "me_sreenta"  # your telegram username
     API_KEY = "your bot api key"  # your api key, as provided by the @botfather
     SQLALCHEMY_DATABASE_URI = 'postgresql://username:password@localhost:5432/database'  # sample db credentials
     JOIN_LOGGER = '-1234567890' # some group chat that your bot is a member of
     USE_JOIN_LOGGER = True
-    DRAGONS = [18673980, 83489514]  # List of id's for users which have sudo access to the bot.
+    SUDO_USERS = [, ]  # List of id's for users which have sudo access to the bot.
     LOAD = []
     NO_LOAD = ['translation']
 ```
@@ -83,10 +81,10 @@ The following env variables are supported:
  messages
  - `URL`: The URL your webhook should connect to (only needed for webhook mode)
 
- - `DRAGONS`: A space-separated list of user_ids which should be considered sudo users
- - `DEMONS`: A space-separated list of user_ids which should be considered support users (can gban/ungban,
+ - `SUDO_USERS`: A space-separated list of user_ids which should be considered sudo users
+ - `SUPPORT_USERS`: A space-separated list of user_ids which should be considered support users (can gban/ungban,
  nothing else)
- - `WOLVES`: A space-separated list of user_ids which should be considered whitelisted - they can't be banned.
+ - `WHITELIST_USERS`: A space-separated list of user_ids which should be considered whitelisted - they can't be banned.
  - `DONATION_LINK`: Optional: link where you would like to receive donations.
  - `CERT_PATH`: Path to your webhook certificate
  - `PORT`: Port to use for your webhooks
@@ -167,7 +165,7 @@ All that is needed is that your .py file is in the modules folder.
 
 To add commands, make sure to import the dispatcher via
 
-`from SaitamaRobot import dispatcher`.
+`from kaveriprobot import dispatcher`.
 
 You can then add commands using the usual
 
@@ -187,7 +185,7 @@ through the `/stats` command, which is only available to the bot owner.
 
 Once you've set up your database and your configuration is complete, simply run the bat file(if on windows) or run (Linux):
 
-`python3 -m SaitamaRobot`
+`python3 -m kaveriprobot`
 
 You can use [nssm](https://nssm.cc/usage) to install the bot as service on windows and set it to restart on /gitpull 
 Make sure to edit the start and restart bats to your needs. 
@@ -201,11 +199,11 @@ For starters click on this button
 
 
 ## Credits
-The bot is based on the original work done by [PaulSonOfLars](https://github.com/PaulSonOfLars)
+The bot is based on the original work done by [me_sreenta](https://t.me/me_sreenta)
 This repo was just revamped to suit an Anime-centric community. All original credits go to Paul and his dedication, Without his efforts, this fork would not have been possible!
 
 Also, missing proper credit for blacklistusers taken from TheRealPhoenixBot (will add it later, this note says unless it is done)
 
 Any other authorship/credits can be seen through the commits.
 
-Should any be missing kindly let us know at [One Punch Support](https://t.me/OnePunchSupport) or simply submit a pull request on the readme.
+Should any be missing kindly let us know at [@kaveriprobot_updates](https://t.me/kaveriprobot_updates) or simply submit a pull request on the readme.
