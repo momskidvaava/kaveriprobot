@@ -1,4 +1,6 @@
 {
+   "name": "kaveriprobot",
+   "repository": "https://github.com/momskidvaava/kaveriprobot.git",
    "addons": [
       {
          "options": {
@@ -152,6 +154,4 @@
       "manager",
       "Saitama"
    ],
-   "name": "kaveriprobot",
-   "repository": "https://github.com/momskidvaava/kaveriprobot.git"
 }
