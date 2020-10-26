@@ -69,6 +69,7 @@ the things I can help you with.
  • /settings:
    • in PM: will send you your settings for all supported modules.
    • in a group: will redirect you to pm, with all that chat's settings.
+"""
 
 
 {}
@@ -82,7 +83,7 @@ kaveriprobot_IMG = "https://telegra.ph/file/09f5cae495fa30843f37a.jpg"
 DONATE_STRING = """Heya, glad to hear you want to donate!
 kaveriprobot is hosted on one of vaava's Servers and doesn't require any donations as of now but \
 You can donate to the original writer of the Base code, Sreekumar
-There are two ways of supporting him
+There are two ways of supporting him;"""
 
 IMPORTED = {}
 MIGRATEABLE = []
