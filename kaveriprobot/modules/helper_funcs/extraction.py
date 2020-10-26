@@ -126,7 +126,6 @@ def extract_unt_fedban(message: Message,
         if not user_id and not isinstance(user_id, int):
             message.reply_text(
                 "I have no users on my db. You will be able to interact with them if"
-                "You replied to that person's message, or forwarded one of that user's messages"
             )
             return None, None
 
